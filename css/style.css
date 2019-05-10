@@ -11,6 +11,10 @@ body {
   width: auto;
 }
 
+img {
+  vertical-align: top;
+}
+
 .header {
   background: #fff;
   padding: 15px 0;
@@ -33,7 +37,6 @@ body {
 }
 
 .btn:hover {
-  transition: 0.3s;
   color:#333;
 }
 
@@ -63,8 +66,12 @@ body {
   background: #4e4e4e;
 }
 
+.title {
+  padding-top:70px;
+}
+
 .title-inner {
-  padding: 320px 0 250px 0;
+  padding: 250px 0;
 }
 
 .title-main {
@@ -137,19 +144,17 @@ body {
   filter:alpha(opacity=70);
    -moz-opacity: 0.7;
    opacity: 0.7;
+  margin-top: 80px;
 }
 
 .works-img:hover {
-  transition: 0.3s;
   filter:alpha(opacity=100);
    -moz-opacity: 1;
    opacity: 1;
 }
 
-.works-img:first-child,
-.works-img:nth-child(2),
-.works-img:nth-child(3) {
-  margin-bottom: 80px;
+.works-img:nth-child(-n+3) {
+  margin-top: 0;
 }
 
 .works-description {
@@ -215,7 +220,6 @@ body {
 }
 
 .sns-block:hover {
-  transition: 0.3s;
   background: #fff;
 }
 
